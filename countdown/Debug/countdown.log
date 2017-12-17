@@ -1,0 +1,27 @@
+﻿  main.c
+d:\vsc\countdown\countdown\main.c(17): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: 参见“getch”的声明
+d:\vsc\countdown\countdown\main.c(9): warning C4101: “section”: 未引用的局部变量
+d:\vsc\countdown\countdown\main.c(11): warning C4101: “counttime”: 未引用的局部变量
+d:\vsc\countdown\countdown\main.c(11): warning C4101: “temp”: 未引用的局部变量
+  in.c
+d:\vsc\countdown\countdown\in.c(31): warning C4308: 负整型常量转换为无符号类型
+d:\vsc\countdown\countdown\in.c(31): warning C4307: “*”: 整型常量溢出
+d:\vsc\countdown\countdown\in.c(31): warning C4307: “+”: 整型常量溢出
+d:\vsc\countdown\countdown\in.c(62): warning C4308: 负整型常量转换为无符号类型
+d:\vsc\countdown\countdown\in.c(62): warning C4307: “*”: 整型常量溢出
+d:\vsc\countdown\countdown\in.c(15): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\time.h(505): note: 参见“localtime”的声明
+d:\vsc\countdown\countdown\in.c(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+d:\vsc\countdown\countdown\in.c(24): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+d:\vsc\countdown\countdown\in.c(48): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+d:\vsc\countdown\countdown\in.c(58): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+d:\vsc\countdown\countdown\in.c(69): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  正在生成代码...
+  countdown.vcxproj -> D:\VSC\countdown\Debug\countdown.exe
+  countdown.vcxproj -> D:\VSC\countdown\Debug\countdown.pdb (Full PDB)
