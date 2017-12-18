@@ -9,7 +9,7 @@ int main(void)
 	int section;
 	char option;
 	Time counttime,temp;		//counttime为输入的时间，temp为倒计时成功输入到文本里的变量
-	SetConsoleTitleA("保持专注——倒计时V1.2");
+	SetConsoleTitleA("保持专注——倒计时V1.3");
 	printf("%s%s\b\bEnter your option:\n",n,space);
 	printf("%s\b\b1.Countdown\n",space);
 	printf("%s\b\b2.Output the record\n",space);

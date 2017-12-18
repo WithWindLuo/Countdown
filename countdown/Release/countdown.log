@@ -1,38 +1,13 @@
-﻿  color_con.c
-color_con.c(8): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(8): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(12): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(12): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(16): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(16): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(20): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(20): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(24): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(24): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(28): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(28): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(32): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(32): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(36): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(36): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(40): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(40): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(44): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(44): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(48): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(48): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(52): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(52): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(56): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(56): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(60): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(60): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-color_con.c(64): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-color_con.c(64): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
+﻿  main.c
+main.c(17): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\conio.h(452): note: 参见“getch”的声明
+main.c(9): warning C4101: “section”: 未引用的局部变量
+main.c(11): warning C4101: “counttime”: 未引用的局部变量
+main.c(11): warning C4101: “temp”: 未引用的局部变量
   正在生成代码
-  3 of 15 functions (20.0%) were compiled, the rest were copied from previous compilation.
+  1 of 15 functions ( 6.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   countdown.vcxproj -> D:\VSC\countdown\Release\countdown.exe
   countdown.vcxproj -> D:\VSC\countdown\Release\countdown.pdb (Full PDB)
