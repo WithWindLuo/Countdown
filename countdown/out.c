@@ -16,15 +16,16 @@ void out(void)
 	}
 	fread(&date, sizeof(Date), 1, fp);
 	fread(&time, sizeof(Time), 1, fp);
+	printf("%s", n);
 	while (!feof(fp))
 	{
-		printf("%d-%d-%d\n", date.year, date.month, date.day);
-		printf("%02d:%02d:%02d\n", time.hour, time.min, time.sec);
+		printf("%s%d-%d-%d\n",space, date.year, date.month, date.day);
+		printf("%s%02d:%02d:%02d\n",space, time.hour, time.min, time.sec);
 		fread(&date, sizeof(Date), 1, fp);
 		fread(&time, sizeof(Time), 1, fp);
 	}
 	fclose(fp);
-	printf("Enter 'q' to quit!");
+	printf("%sEnter 'q' to quit!",space);
 	while (getch() != 'q')
 		continue;
 	system("cls");
