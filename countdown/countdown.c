@@ -7,34 +7,52 @@ void _countdown(void)
 	system("cls");
 	char ch = ' ';
 	char a;
+	bool isminu = false;		//是否输入为负数的标志
 	Time counttime, temp;		//counttime为输入的时间，temp为倒计时成功输入到文本里的变量
 	counttime.hour = counttime.min = counttime.sec = 0;		//初始化
 	printf("%s%s%s\b\b\b\b\b\b\b\b\b\b\b\b\bPlease enter hour,min,sec(such as\"2 1 3\",'q' to quit):",n, space, b);
 	while (1)
 	{
-		if (scanf("%d", &counttime.hour) != 1 || counttime.hour <= -1)
-			//输入其他字符或者小于0直接跳出循环，即可跳出该函数
+		if (scanf("%d", &counttime.hour) != 1)
+			//输入其他字符直接跳出循环，即可跳出该函数
 		{
 			while (getchar() != '\n')
 				continue;
 			break;
 		}
 
-		scanf("%d", &counttime.min);
+
+		if (scanf("%d", &counttime.min) != 1)
+		{
+			while (getchar() != '\n')
+				continue;
+			break;
+		}
+
+		if (scanf("%d", &counttime.sec) != 1)
+		{
+			while (getchar() != '\n')
+				continue;
+			break;
+		}
+
+		if (counttime.hour <= -1)		//如果是负数，则变为正数，且改变标志，不输进入文件
+		{
+			isminu = true;
+			counttime.hour *= -1;
+		}
 		if (counttime.min <= -1)
 		{
-			while (getchar() != '\n')
-				continue;
-			break;
+			isminu = true;
+			counttime.min *= -1;
 		}
-
-		scanf("%d", &counttime.sec);
 		if (counttime.sec <= -1)
 		{
-			while (getchar() != '\n')
-				continue;
-			break;
+			isminu = true;
+			counttime.sec *= -1;
 		}
+
+
 		time_change(&counttime);
 		temp = counttime;
 		system("cls");
@@ -84,7 +102,8 @@ void _countdown(void)
 			counttime.hour--;
 			counttime.min = 59;
 		} while (counttime.hour >= 0);
-		in(&temp);
+		if(isminu == false)		//若负数，不输入文件
+			in(&temp);
 		color_con();		//祝贺函数
 		out_today();		//输出当天的记录
 		//倒计时成功，写入文本

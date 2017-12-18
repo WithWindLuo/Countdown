@@ -4,6 +4,7 @@ extern b[40];
 extern n[30];
 void color_con(void)
 {
+	/*
 	system("color 01");
 	printf("%s%sCongratulate!\a\n", n, space);
 	Sleep(250);
@@ -61,5 +62,6 @@ void color_con(void)
 	Sleep(250);
 	system("cls");
 	system("color 0F");
+	*/
 	printf("%s%sCongratulate!!!\n\a", n, space);
 }
