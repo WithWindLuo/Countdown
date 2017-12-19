@@ -118,7 +118,8 @@ void _countdown(void)
 		color_con();		//祝贺函数
 		out_today();		//输出当天的记录
 		//倒计时成功，写入文本
-		Sleep(2000);
+		if(!ISDEBUG)
+			Sleep(2000);
 		putchar('\a');
 		system("color 0F");
 	a:

@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <conio.h>
 #include <time.h>
-#define ISDEBUG 1		//是否在调试
+#define ISDEBUG 0		//是否在调试
 typedef struct Time
 {
 	int hour;
