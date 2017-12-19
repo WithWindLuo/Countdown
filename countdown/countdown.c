@@ -108,9 +108,9 @@ void _countdown(void)
 			counttime.hour--;
 			counttime.min = 59;
 		} while (counttime.hour >= 0);
-		if (ch == '3')			//如果提前结束
+		if (ch == 'a')			//如果提前结束
 		{
-			ch == 'a';
+			ch == ' ';
 			in(&ahead_time);
 		}
 		else if(isminu == false)		//若负数，不输入文件
