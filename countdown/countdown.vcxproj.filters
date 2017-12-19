@@ -36,6 +36,9 @@
     <ClCompile Include="out_today.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="time_subtract.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cd.h">

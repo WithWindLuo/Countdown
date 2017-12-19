@@ -8,7 +8,8 @@ void _countdown(void)
 	char ch = ' ';
 	char a;
 	bool isminu = false;		//是否输入为负数的标志
-	Time counttime, temp;		//counttime为输入的时间，temp为倒计时成功输入到文本里的变量
+	Time counttime, temp,ahead_time;		//counttime为输入的时间，temp为倒计时成功输入到文本里的变量,等于初始输入值
+											//ahead_time为提前结束时所走过的时间										
 	counttime.hour = counttime.min = counttime.sec = 0;		//初始化
 	printf("%s%s%s\b\b\b\b\b\b\b\b\b\b\b\b\bPlease enter hour,min,sec(such as\"2 1 3\",'q' to quit):",n, space, b);
 	while (1)
@@ -54,7 +55,7 @@ void _countdown(void)
 
 
 		time_change(&counttime);
-		temp = counttime;
+		ahead_time=temp = counttime;
 		system("cls");
 		do
 		{
@@ -62,8 +63,8 @@ void _countdown(void)
 			{
 				do
 				{
-					printf("%s\t\t\t\t\t\t\t(Enter '1'to stop,'2'to continue,'q' to end)\n", n);
-					printf("%s\b\bStay Focus!!!\n", space);
+					printf("%s\t\t\t\t\t(Enter '1'to stop,'2'to continue,'3' to accomplish ahead of schedule,'q' to end)\n", n);
+					printf("%s\bStay Focus!!!\n", space);
 					printf("%s %02d:%02d:%02d\n", space, counttime.hour, counttime.min, counttime.sec);
 
 					Sleep(1000);
@@ -94,6 +95,11 @@ void _countdown(void)
 
 							}
 						}
+						else if (ch == '3')
+						{
+							ahead_time=time_subtract(ahead_time, counttime);
+							counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
+						}
 
 				} while (counttime.sec >= 0);
 				counttime.min--;
@@ -102,7 +108,12 @@ void _countdown(void)
 			counttime.hour--;
 			counttime.min = 59;
 		} while (counttime.hour >= 0);
-		if(isminu == false)		//若负数，不输入文件
+		if (ch == '3')			//如果提前结束
+		{
+			ch == ' ';
+			in(&ahead_time);
+		}
+		else if(isminu == false)		//若负数，不输入文件
 			in(&temp);
 		color_con();		//祝贺函数
 		out_today();		//输出当天的记录
@@ -113,13 +124,10 @@ void _countdown(void)
 	a:
 		if (ch == 'q')
 		{
-			ch = 'a';
+			ch = ' ';
 			printf("%s%s\b\b\b\b\b\bSucceed in ending!\n", n, space);
 		}
 		printf("%s%s\b\b\b\b\b\b\bPlease enter hour,min,sec(such as\"2 1 3\",'q' to quit):", space, b);
 	}
 	return;
 }
-
-
-

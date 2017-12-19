@@ -5,11 +5,8 @@ char b[40] = "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b";		//向后缩进所用的退格符
 
 int main(void)
 {
-	system("color 0F");
-	int section;
-	char option;
-	Time counttime,temp;		//counttime为输入的时间，temp为倒计时成功输入到文本里的变量
-	SetConsoleTitleA("保持专注——倒计时V1.3");
+	system("color 0F");	char option;
+	SetConsoleTitleA("保持专注——倒计时V1.4");
 	printf("%s%s\b\bEnter your option:\n",n,space);
 	printf("%s\b\b1.Countdown\n",space);
 	printf("%s\b\b2.Output the record\n",space);

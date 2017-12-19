@@ -1,52 +1,29 @@
-﻿  out.c
-d:\vsc\countdown\countdown\out.c(11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-d:\vsc\countdown\countdown\out.c(13): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\out.c(13): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\out.c(19): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\out.c(22): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\out.c(23): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\out.c(28): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\out.c(29): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+﻿  countdown.c
+d:\vsc\countdown\countdown\countdown.c(113): warning C4553: “==”: 运算符不起任何作用；是否是有意使用“=”的?
+d:\vsc\countdown\countdown\countdown.c(14): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(14): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(14): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 3 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(17): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+d:\vsc\countdown\countdown\countdown.c(26): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+d:\vsc\countdown\countdown\countdown.c(33): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+d:\vsc\countdown\countdown\countdown.c(66): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(67): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(68): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(75): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: 参见“getch”的声明
-d:\vsc\countdown\countdown\out.c(32): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-  main.c
-d:\vsc\countdown\countdown\main.c(17): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+d:\vsc\countdown\countdown\countdown.c(81): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(81): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(82): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(82): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(85): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: 参见“getch”的声明
-d:\vsc\countdown\countdown\main.c(9): warning C4101: “section”: 未引用的局部变量
-d:\vsc\countdown\countdown\main.c(11): warning C4101: “counttime”: 未引用的局部变量
-d:\vsc\countdown\countdown\main.c(11): warning C4101: “temp”: 未引用的局部变量
-  color_con.c
-d:\vsc\countdown\countdown\color_con.c(8): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(8): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(12): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(12): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(16): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(16): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(20): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(20): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(24): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(24): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(28): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(28): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(32): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(32): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(36): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(36): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(40): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(40): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(44): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(44): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(48): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(48): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(52): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(52): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(56): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(56): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(60): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(60): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(64): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
-d:\vsc\countdown\countdown\color_con.c(64): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
-  正在生成代码...
+d:\vsc\countdown\countdown\countdown.c(128): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(128): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(130): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(130): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int *”
+d:\vsc\countdown\countdown\countdown.c(9): warning C4101: “a”: 未引用的局部变量
   countdown.vcxproj -> D:\VSC\countdown\Debug\countdown.exe
   countdown.vcxproj -> D:\VSC\countdown\Debug\countdown.pdb (Full PDB)

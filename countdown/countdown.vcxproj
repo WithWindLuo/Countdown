@@ -26,6 +26,7 @@
     <ClCompile Include="out.c" />
     <ClCompile Include="out_today.c" />
     <ClCompile Include="time_change.c" />
+    <ClCompile Include="time_subtract.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cd.h" />
