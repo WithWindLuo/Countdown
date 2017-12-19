@@ -63,7 +63,7 @@ void _countdown(void)
 			{
 				do
 				{
-					printf("%s\t\t\t\t\t(Enter '1'to stop,'2'to continue,'3' to accomplish ahead of schedule,'q' to end)\n", n);
+					printf("%s\t\t\t\t\t(Enter '1'to stop,'2'to continue,'a' to accomplish ahead of schedule,'e' to end)\n", n);
 					printf("%s\bStay Focus!!!\n", space);
 					printf("%s %02d:%02d:%02d\n", space, counttime.hour, counttime.min, counttime.sec);
 
@@ -71,14 +71,14 @@ void _countdown(void)
 					system("cls");
 					counttime.sec--;
 
-					if (_kbhit())		//中途键入'q'终止
-						if ((ch = getch()) == 'q')		//退出功能
+					if (_kbhit())		//中途键入'e'终止
+						if ((ch = getch()) == 'e')		//退出功能
 						{
 							goto a;
 						}
 						else if (ch == '1')		//暂停功能，用阻塞函数实现
 						{
-							printf("%s%s\b\b\b\b(Enter 'q' to end)\n", n, space);
+							printf("%s%s\b\b\b\b(Enter 'e' to end)\n", n, space);
 							printf("%s\b\b\b\b\b\bSucceed in stopping!!!\n%s%02d:%02d:%02d\n", space, space, counttime.hour, counttime.min, ++counttime.sec);
 							while (!_kbhit())
 							{
@@ -87,7 +87,7 @@ void _countdown(void)
 									system("cls");
 									break;
 								}
-								else if (ch == 'q')
+								else if (ch == 'e')
 								{
 									system("cls");
 									goto a;
@@ -95,7 +95,7 @@ void _countdown(void)
 
 							}
 						}
-						else if (ch == '3')
+						else if (ch == 'a')
 						{
 							ahead_time=time_subtract(ahead_time, counttime);
 							counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
@@ -110,7 +110,7 @@ void _countdown(void)
 		} while (counttime.hour >= 0);
 		if (ch == '3')			//如果提前结束
 		{
-			ch == ' ';
+			ch == 'a';
 			in(&ahead_time);
 		}
 		else if(isminu == false)		//若负数，不输入文件
@@ -123,7 +123,7 @@ void _countdown(void)
 		putchar('\a');
 		system("color 0F");
 	a:
-		if (ch == 'q')
+		if (ch == 'e')
 		{
 			ch = ' ';
 			printf("%s%s\b\b\b\b\b\bSucceed in ending!\n", n, space);
