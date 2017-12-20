@@ -26,7 +26,7 @@ void out(void)
 	}
 	fclose(fp);
 	printf("%sEnter 'q' to quit!",space);
-	while (getch() != 'q')
+	while (tolower(getch()) != 'q')
 		continue;
 	system("cls");
 	printf("%s", n);

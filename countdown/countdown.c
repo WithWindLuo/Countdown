@@ -57,6 +57,7 @@ void _countdown(void)
 		time_change(&counttime);
 		ahead_time=temp = counttime;
 		system("cls");
+		if(!ISDEBUG)
 		do
 		{
 			do
@@ -72,7 +73,7 @@ void _countdown(void)
 					counttime.sec--;
 
 					if (_kbhit())		//中途键入'e'终止
-						if ((ch = getch()) == 'e')		//退出功能
+						if (tolower(ch = getch()) == 'e')		//退出功能
 						{
 							goto a;
 						}
@@ -87,7 +88,7 @@ void _countdown(void)
 									system("cls");
 									break;
 								}
-								else if (ch == 'e')
+								else if (tolower(ch) == 'e')
 								{
 									system("cls");
 									goto a;
@@ -95,7 +96,7 @@ void _countdown(void)
 
 							}
 						}
-						else if (ch == 'a')
+						else if (tolower(ch) == 'a')
 						{
 							ahead_time=time_subtract(ahead_time, counttime);
 							counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
@@ -108,7 +109,7 @@ void _countdown(void)
 			counttime.hour--;
 			counttime.min = 59;
 		} while (counttime.hour >= 0);
-		if (ch == 'a')			//如果提前结束
+		if (tolower(ch) == 'a')			//如果提前结束
 		{
 			ch == ' ';
 			in(&ahead_time);
@@ -123,7 +124,7 @@ void _countdown(void)
 		putchar('\a');
 		system("color 0F");
 	a:
-		if (ch == 'e')
+		if (tolower(ch) == 'e')
 		{
 			ch = ' ';
 			printf("%s%s\b\b\b\b\b\bSucceed in ending!\n", n, space);

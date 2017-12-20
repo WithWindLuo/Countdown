@@ -6,12 +6,12 @@ char b[40] = "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b";		//向后缩进所用的退格符
 int main(void)
 {
 	system("color 0F");	char option;
-	SetConsoleTitleA("保持专注——倒计时V1.5");
+	SetConsoleTitleA("保持专注——倒计时V1.6");
 	printf("%s%s\b\bEnter your option:\n",n,space);
 	printf("%s\b\b1.Countdown\n",space);
 	printf("%s\b\b2.Output the record\n",space);
 	printf("%s\b\bq.Quit\n",space);
-	while((option = getch()) != 'q')
+	while(tolower(option = getch()) != 'q')
 	{
 		switch (option)
 		{

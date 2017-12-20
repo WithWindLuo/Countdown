@@ -4,6 +4,7 @@
 #include <stdbool.h>
 #include <conio.h>
 #include <time.h>
+#include <ctype.h>
 #define ISDEBUG 0	//ÊÇ·ñÔÚµ÷ÊÔ
 typedef struct Time
 {
