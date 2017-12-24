@@ -79,7 +79,7 @@ void _countdown(void)
 						}
 						else if (ch == '1')		//暂停功能，用阻塞函数实现
 						{
-							printf("%s%s\b\b\b\b(Enter 'e' to end)\n", n, space);
+							printf("%s\t\t\t\t\t\t   (Enter 'e' to end，'a' to accomplish ahead of schedule)\n", n);
 							printf("%s\b\b\b\b\b\bSucceed in stopping!!!\n%s%02d:%02d:%02d\n", space, space, counttime.hour, counttime.min, ++counttime.sec);
 							while (!_kbhit())
 							{
@@ -93,11 +93,19 @@ void _countdown(void)
 									system("cls");
 									goto a;
 								}
+								else if (tolower(ch) == 'a')
+								{
+									system("cls");
+									ahead_time = time_subtract(ahead_time, counttime);
+									counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
+									break;
+								}
 
 							}
 						}
 						else if (tolower(ch) == 'a')
 						{
+							system("cls");
 							ahead_time=time_subtract(ahead_time, counttime);
 							counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
 						}
