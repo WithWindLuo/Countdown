@@ -6,7 +6,6 @@ void _countdown(void)
 {
 	system("cls");
 	char ch = ' ';
-	char a;
 	bool isminu = false;		//是否输入为负数的标志
 	Time counttime, temp,ahead_time;		//counttime为输入的时间，temp为倒计时成功输入到文本里的变量,等于初始输入值
 											//ahead_time为提前结束时所走过的时间										
@@ -119,7 +118,7 @@ void _countdown(void)
 		} while (counttime.hour >= 0);
 		if (tolower(ch) == 'a')			//如果提前结束
 		{
-			ch == ' ';
+			ch = ' ';
 			in(&ahead_time);
 		}
 		else if(isminu == false)		//若负数，不输入文件
