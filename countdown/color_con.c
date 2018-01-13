@@ -65,4 +65,5 @@ void color_con(void)
 		system("color 0F");
 	}
 	printf("%s%sCongratulate!!!\n\a", n, space);
+	//system("C:\\final.png");
 }

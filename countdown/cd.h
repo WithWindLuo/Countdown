@@ -5,6 +5,7 @@
 #include <conio.h>
 #include <time.h>
 #include <ctype.h>
+#include <tchar.h>
 #define ISDEBUG 0	//ÊÇ·ñÔÚµ÷ÊÔ
 typedef struct Time
 {

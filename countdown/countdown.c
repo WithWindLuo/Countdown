@@ -72,12 +72,12 @@ void _countdown(void)
 					counttime.sec--;
 
 					if (_kbhit())		//中途键入'e'终止
-						if (tolower(ch = getch()) == 'e')		//退出功能
+						switch (ch = tolower(getch()))
 						{
+						case 'e':		//退出功能
 							goto a;
-						}
-						else if (ch == '1')		//暂停功能，用阻塞函数实现
-						{
+							break;
+						case '1':	//暂停功能，用阻塞函数实现
 							printf("%s\t\t\t\t\t\t   (Enter 'e' to end，'a' to accomplish ahead of schedule)\n", n);
 							printf("%s\b\b\b\b\b\bSucceed in stopping!!!\n%s%02d:%02d:%02d\n", space, space, counttime.hour, counttime.min, ++counttime.sec);
 							while (!_kbhit())
@@ -99,16 +99,54 @@ void _countdown(void)
 									counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
 									break;
 								}
-
 							}
-						}
-						else if (tolower(ch) == 'a')
-						{
+							break;
+						case 'a':
 							system("cls");
-							ahead_time=time_subtract(ahead_time, counttime);
+							ahead_time = time_subtract(ahead_time, counttime);
 							counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
+							break;
+						default:
+							break;
 						}
+					/*			以前的代码 先被上面的switch替代
+					if (tolower(ch = getch()) == 'e')		//退出功能
+					{
+					goto a;
+					}
+					else if (ch == '1')		//暂停功能，用阻塞函数实现
+					{
+					printf("%s\t\t\t\t\t\t   (Enter 'e' to end，'a' to accomplish ahead of schedule)\n", n);
+					printf("%s\b\b\b\b\b\bSucceed in stopping!!!\n%s%02d:%02d:%02d\n", space, space, counttime.hour, counttime.min, ++counttime.sec);
+					while (!_kbhit())
+					{
+					if ((ch = getch()) == '2')		//恢复功能，用释放阻塞函数实现，中途可切换至退出功能
+					{
+					system("cls");
+					break;
+					}
+					else if (tolower(ch) == 'e')
+					{
+					system("cls");
+					goto a;
+					}
+					else if (tolower(ch) == 'a')
+					{
+					system("cls");
+					ahead_time = time_subtract(ahead_time, counttime);
+					counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
+					break;
+					}
 
+					}
+					}
+					else if (tolower(ch) == 'a')
+					{
+					system("cls");
+					ahead_time=time_subtract(ahead_time, counttime);
+					counttime.hour = counttime.min = counttime.sec = -1;	//提前结束 跳出循环
+					}
+					*/
 				} while (counttime.sec >= 0);
 				counttime.min--;
 				counttime.sec = 59;
